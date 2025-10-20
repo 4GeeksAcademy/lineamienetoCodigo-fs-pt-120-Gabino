@@ -1,4 +1,4 @@
-const pronoun = ['the', 'our'];
+/* const pronoun = ['the', 'our'];
 
 const adj = ['great', 'big'];
 
@@ -14,4 +14,23 @@ function sentence() {
     }
 }
 
-sentence()
+sentence() */
+
+
+//Yo creo que klo mejoraría de esta otra forma:
+
+const pronoun = ['the', 'our'];
+const adj = ['great', 'big'];
+const noun = ['jogger', 'racoon'];
+
+function sentence() {
+    pronoun.forEach(pronoun => {
+        adj.forEach(adj => {
+            noun.forEach(noun => {
+                console.log(pronoun + adj + noun + '.com');
+            });
+        });
+    });
+}
+
+sentence();
